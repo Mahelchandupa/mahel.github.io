@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <h1>MAHEL</h1>
+        </div>
+        <div class="menu" id="menu">
+            <ul>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#About-me">About Us</a></li>
+                <li><a href="#Project">Project</a></li>
+                <li><a href="#Contact">Contact</a></li>
+            </ul>
+        </div>
+        <div id="menu-btn">
+            <img src="image/menu.png" alt="" id="change">
+        </div>
+    </div>
+
+    <section id="Home">
+        <div class="content">
+            <div class="text">
+                <h1>Hi, I'm <span>MAHEL</span><br> Chandupa</h1>
+                <img src="image/mahell.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!--- ABOUT Me-->
+    <section id="About-me">
+        <div class="kkk">
+            <h2>About Me</h2>
+            <div class="aboutme-body">
+                <div class="about-discri">
+                    <p>I'm Mahel Chandupa and I'm Undergradute Software engineering student. 
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                        when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+                        ssLorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                        when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+                        ssLorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                        when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+                   </p>
+                </div>
+                <div class="bar">
+                    <h3 class="ppp">HTML</h3>
+                       <div class="progress">
+                          <div class="progress-fill-1"></div>
+                          <span class="percentage">67%</span>
+                       </div>
+              
+                   <h3 class="ppp">CCS</h3>
+                      <div class="progress">
+                          <div class="progress-fill-2"></div>
+                          <span class="percentage">55%</span>
+                       </div>
+        
+                   <h3 class="ppp">Java Script</h3>
+                     <div class="progress">
+                          <div class="progress-fill-3"></div>
+                          <span class="percentage">45%</span>
+                       </div>
+        
+                   <h3 class="ppp">C#</h3>
+                     <div class="progress">
+                        <div class="progress-fill-4"></div>
+                        <span class="percentage">63%</span>
+                      </div>
+
+                  <h3 class="ppp">JAVA</h3>
+                     <div class="progress">
+                        <div class="progress-fill-5"></div>
+                        <span class="percentage">37%</span>
+                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!----------- Project -------------->
+
+    <section id="Project">
+         <div class="my-language">
+            <h2 class="our">PROJECT</h2>
+            <div class="branches">
+                <div class="branch">
+                    <h3>Reload App Clone</h3>
+                    <p><a href="reloadApp.html">
+                          C# is a modern, object-oriented, and type-safe programming language.
+                          C# enables developers to build many types of secure and robust applications that run in . NET.
+                          </a> 
+                    </p>
+                </div>
+                <div class="branch">
+                    <h3>JAVA</h3>
+                    <p><a href=""> Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                        when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+                    ss</a>
+                    </p>
+                </div>
+                <div class="branch">
+                    <h3>CSS</h3>
+                    <p><a href="">Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                        when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+                    ss</a> 
+                    </p>
+                </div>
+                <div class="branch">
+                    <h3>HTML</h3>
+                    <p><a href="">Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                        when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+                    ss</a> 
+                    </p>
+                </div>
+            </div>
+         </div>
+    </section>
+
+    <!--------------- Footer ----------->
+    <section id="Contact">
+        <h3 class="contact-us">Contact Us</h3>
+        <div class="footer">
+            <div class="logo-footer">
+                <h1>MAHEL</h1>
+                <img src="image/mahell.jpg" alt="">
+            </div>
+            <div class="contact-footer">
+               <p>No: 120/5, Wijerama (Vidya) Mawatha, <br>Colombo 07, Sri Lanka</p>
+               <p>Phone No : +94 78 909 2063</p>
+               <p>Email : <a href="#"> mahelchandupa1013@gmail.com</a></p>
+            </div>
+            <div class="links-footer">
+                <a href=""><img src="image/instagram.png" alt=""></a>
+                <img src="image/telegram.png" alt="">
+                <a href="https://www.facebook.com/mahel.chandupa"><img src="image/dribble.png" alt=""></a>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        var menubtn = document.getElementById('menu-btn');
+        var menu = document.getElementById('menu');
+        var change = document.getElementById('change');
+        
+        menubtn.onclick = function(){
+            if(menu.style.display == "none"){
+                menu.style.display = "block";
+                change.src = "image/close.png";
+            }
+            else{
+                menu.style.display = "none";
+                change.src = "image/menu.png";
+            }
+        }
+    </script>
+</body>
+</html>
