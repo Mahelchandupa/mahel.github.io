@@ -1,0 +1,487 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(46, 6, 37);
+}
+
+/*----------------header-----------------*/
+
+.header{
+    position: relative;
+    width: 100%;
+    justify-content: space-between;
+    display: flex;
+    background-color:blueviolet;
+    align-items: center;
+}
+.logo{
+    width:30%;
+    margin-left:50px ;
+}
+.logo h1{
+    padding-top: 5px;
+    font-size: 40px;
+    color:chartreuse;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.menu ul{
+    list-style-type: none;
+    display:flex;
+}
+.menu ul li{
+    list-style: none;
+}
+.menu ul li a{
+    text-decoration: none;
+    color: white;
+    transition: 0.5s;
+    padding: 1.3rem 1.5rem;
+    display: block;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.menu ul li :hover{
+    background-color:chartreuse;
+    color: black;
+    transition: 0.5s;
+}
+#menu-btn{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    right: 30px;
+    top: 13px;
+    border-radius: 3px;
+    z-index: 3;
+    cursor: pointer;
+    display: none;
+}
+#menu-btn img{
+    width: 20px;
+    margin: 15px 10px;
+}
+
+@media (max-width: 700px){
+    .header{
+        background-color: transparent;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .header .logo h1{
+        font-size: 30px;
+        padding: 10px 0;
+    }
+    #menu-btn{
+        display: flex;
+        margin-top: -12px;
+    }
+    .menu{
+       display: none;
+       width: 100%;
+    }   
+    .menu ul{
+        flex-direction: column;
+        width: 100%;
+    }
+    .menu li{
+        text-align: center;
+    }
+    .menu ul li a{
+        padding: 1rem ;
+    }
+}
+    
+
+/*----------------content------------*/
+.content{
+   width: 100%;
+   height: 90vh;
+   background-color: rgb(7, 8, 8);
+   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   position:absolut;
+}
+.content .text{
+    display: flex;
+}
+.content .text h1 span{
+    color: rgb(230, 33, 33);
+    animation: mahel 2s linear infinite;
+}
+
+.content img{
+    margin-top: 90px;
+    width: 550px;
+    margin-left: 200px;
+    border-radius: 20% 0 20% 0;
+}
+.content h1{
+    color: rgb(210, 73, 23);
+    font-size: 80px;
+    padding-top: 240px;
+    padding-left: 150px;
+   
+}
+@keyframes mahel{
+    0%{
+       color: #fff;
+      }
+    25%{
+        color:cyan;
+      } 
+    40%{
+        color:rgb(0, 132, 255);
+      } 
+    65%{
+        color:rgb(255, 238, 0);
+      }
+    75%{
+        color:rgb(72, 255, 0);
+      }
+    100%{
+        color:rgb(140, 0, 255);
+      }
+}
+@media (max-width: 700px) {
+    .content .text{
+        display: inline-block;
+    }
+    .content h1{
+        text-align: center;
+        font-size: 50px;
+        padding: 0;
+        padding-top: 30px;
+    }
+    .content img{
+        width: 200px;
+        margin-left: 35px;
+    }
+}
+
+/*--------about me ------------*/
+.kkk{
+    background-color: rgb(205, 97, 9);
+    min-height: 500px;
+    position: relative;
+}
+.aboutme-body{
+    display: flex;
+    width: 100%;
+    justify-content:space-around;
+}
+.aboutme-body .about-discri{
+    width: 50%;
+}
+.aboutme-body .about-discri p{
+    padding: 0 70px;
+    font-size: 17px;
+    text-align: justify;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.kkk h2{
+      text-align: center;
+      font-size: 32px;
+      font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      color: #fff;
+      padding: 30px;
+      padding-bottom: 50px;
+}
+.aboutme-body .bar{
+    width: 50%;
+    border-left: 2px #fff solid ;
+    padding-left: 50px;
+}
+.ppp{
+    color: darkblue;
+    padding-left: 7px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.progress{
+    background:rgba(236, 236, 236);
+    margin:10px;
+    width:80%;
+    height:20px;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+}
+/*---------------progress -----------*/
+
+/*----------------- 1 -----------------*/
+.progress-fill-1{
+    width:67%;
+    height: 100%;
+    background: linear-gradient(to right top,#011340, #c0b704);
+}
+.percentage{
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    font-size: 12px bold;
+}
+/*----------------- 2 -----------------*/
+.progress-fill-2{
+    width:55%;
+    height: 100%;
+    background: linear-gradient(to right top,#011340, #c0b704);
+}
+.percentage{
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    font-size: 12px bold;
+}
+/*----------------- 3 -----------------*/
+.progress-fill-3{
+    width:45%;
+    height: 100%;
+    background: linear-gradient(to right top,#011340, #c0b704);
+}
+.percentage{
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    font-size: 12px bold;
+}
+
+/*----------------- 4 -----------------*/
+.progress-fill-4{
+    width:63%;
+    height: 100%;
+    background: linear-gradient(to right top,#011340, #c0b704);
+}
+.percentage{
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    font-size: 12px bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+/*----------- 5 --------------*/
+.progress-fill-5{
+    width:37%;
+    height: 100%;
+    background: linear-gradient(to right top,#011340, #c0b704);
+}
+.percentage{
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    font-size: 12px bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+@media (max-width: 700px) {
+    .aboutme-body{
+        display: block;
+    }
+    .aboutme-body .about-discri{
+        width: 100%;
+    }
+    .aboutme-body .about-discri p{
+        padding: 0 20px;
+        font-size: 14px;
+        padding-bottom: 10px;
+    }
+    .kkk h2{
+        font-size: 20px;
+        padding: 20px;
+    }
+    .aboutme-body .bar{
+        margin: 0 20px;
+        width: 100%;
+        padding-left: 2px;
+        border: none;
+    }
+    .ppp{
+        font-size: 12px;
+    }
+    .progress{
+        margin: 0;
+    }
+}
+/*---------------------------------------------------------------------------------------*/
+
+/*---------Project------*/
+
+.my-language{
+    background-color: rgb(223, 27, 56);
+}
+.my-language h2{
+   text-align: center;
+   padding-top: 30px;
+   font-size: 20px;
+   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   color: #fff;
+}
+.branches{
+    margin-top: 20px;
+    width: 80%;
+    display: flex;
+    margin-left: 150px;
+    margin-bottom: 30px;
+}
+.branch{
+   width: 23.33%;
+   background-color: rgb(142, 202, 78);
+   margin-left: 20px;
+   margin-bottom: 100px;
+   padding: 20px;
+   cursor: pointer;
+   position: relative;
+   transition: 0.5s;
+}
+.branch p{
+   padding-top: 5px;
+  /* color: rgb(22, 22, 25);*/
+}
+.branch p a{
+    text-decoration: none;
+    color: rgb(4, 3, 3);
+}
+.branch h3{
+    color:rgb(21, 2, 64);
+    padding-bottom: 10px;
+}
+.branch:hover{
+    background-color: rgb(214, 203, 190);
+    top : -10px;
+    transition: 0.5s;
+}
+.branch:hover p a{
+    color: black;
+}
+@media (max-width: 700px) {
+    .branches{
+        display: inline-block;
+        margin-left: 25px;
+    }
+    .branch{
+        width: 100%;
+        margin-left: 0;
+        padding: 10px ;
+        margin-top: 20px;
+        margin-bottom: 5px;
+    }
+}
+
+/*-----------------footer--------------------*/
+
+.contact-us{
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+.footer{
+    width: 80%;
+    display: flex;
+   /* background-color: blueviolet;*/
+    height: 250px;
+    margin-left: 150px ;
+}
+.logo-footer{
+    width: 33.33%;
+   /* background-color: burlywood;*/
+   /* border: 2px white solid;*/
+}
+.contact-footer{
+    width: 33.33%;
+  /*  background-color: burlywood;*/
+   /* border: 2px white solid;*/
+}
+.links-footer{
+    width: 33.33%;
+   /* background-color: burlywood;*/
+ /*   border: 2px white solid;*/
+}
+.logo-footer h1{
+    font-size: 40px;
+    color:chartreuse;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-top: 30px;
+   /* padding-left: 70px;*/
+    text-align: center;
+}
+.logo-footer img{
+    width:100px;
+    margin-left: 150px;
+    margin-top: 20px;
+    border-radius: 50%;
+}
+.contact-footer{
+    padding: 20px;
+    padding-top: 50px;
+}
+.contact-footer p{
+    padding: 10px;
+    padding-left: 30px;
+    font-family:Arial, Helvetica, sans-serif;
+    color:  white;
+    font-size: 19px;
+}
+.contact-footer a{
+    text-decoration: none;
+    color: rgb(247, 170, 143);
+    cursor: pointer;
+}
+.contact-footer a:hover{
+    color: rgb(218, 61, 40);
+}
+.links-footer{
+    margin-left: 20px;
+    margin-top: 90px;
+}
+.links-footer img{
+    width: 40px;
+    margin: 20px;
+}
+@media (max-width: 700px) {
+    .contact-us
+    {
+      padding: 15px 0;
+      font-size: 20px;
+    } 
+    .footer{
+        display: block;
+        margin-left: 0;
+    }
+    .logo-footer{
+        width: 100%;
+    }
+    .logo-footer h1{
+        font-size: 30px;
+        padding-left: 45px;
+    }
+    .contact-footer{
+        width: 100%;
+        padding: 15px 10px;
+    }
+    .contact-footer p{
+        font-size: 14px;
+    }
+    .links-footer{
+        width: 100%;
+    }
+    .logo-footer img{
+        margin-left: 90px;
+    }
+    .links-footer{
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+    }
+    .links-footer img{
+        width: 30px;
+        margin: 10px;
+    }
+}
+
