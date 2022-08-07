@@ -153,16 +153,12 @@ body{
     }
     .content h1{
         text-align: center;
-        font-size: 25px;
+        font-size: 35px;
         padding: 0;
         padding-top: 30px;
     }
     .content img{
-      /*  position: absolute;*/
-        width: 200px;
-      /*  left: 0;
-        transform: translateX(-80%);*/
-        marign: 40px 10px;
+        width: 100%;
     }
 }
 
