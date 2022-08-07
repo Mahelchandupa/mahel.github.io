@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reload App Clone</title>
     <style>
+        body{
+            background-color: rgb(86, 112, 205);
+        }
         video{
             position: relative;
             width: 700;
@@ -17,7 +20,7 @@
             text-align: center;
             padding: 30px;
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-            color: blue;
+            color: rgb(235, 190, 10);
         }
         .back-arrow img{
              width: 45px;
@@ -32,7 +35,19 @@
             top: 600px;
             right: 450px;
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-
+            color: #fff;
+        }
+        @media  (max-width: 700px) {
+            video{
+                width: 250px;
+            }
+            p{
+                right: 0;
+                top: 350px;
+            }
+            .back-arrow img{
+                left:120px;
+            }
         }
     </style>
 </head>
