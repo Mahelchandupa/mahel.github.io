@@ -499,7 +499,7 @@ hr{
     .contact-us
     {
       padding: 15px 0;
-      font-size: 20px;
+      font-size: 30px;
     } 
     .footer{
         display: block;
@@ -507,6 +507,7 @@ hr{
     }
     .logo-footer{
         width: 100%;
+        justify-content: center;
     }
     .logo-footer h1{
         font-size: 30px;
