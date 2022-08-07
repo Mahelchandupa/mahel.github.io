@@ -440,17 +440,17 @@ hr{
   /*margin-left: 150px ;*/
 }
 .logo-footer{
-    width: 33.33%;
+    width: 26.66%;
    /* background-color: burlywood;*/
    /* border: 2px white solid;*/
 }
 .contact-footer{
-    width: 33.33%;
+    width: 26.66%;
   /*  background-color: burlywood;*/
    /* border: 2px white solid;*/
 }
 .links-footer{
-    width: 33.33%;
+    width: 26.66%;
    /* background-color: burlywood;*/
  /*   border: 2px white solid;*/
 }
@@ -474,7 +474,7 @@ hr{
 }
 .contact-footer p{
     padding: 10px;
-    padding-left: 30px;
+ /*   padding-left: 30px;*/
     font-family:Arial, Helvetica, sans-serif;
     color:  white;
     font-size: 19px;
@@ -525,7 +525,8 @@ hr{
         width: 100%;
     }
     .logo-footer img{
-        margin-left: 90px;
+       /* margin-left: 90px;*/
+        align-items: center;
     }
     .links-footer{
         display: flex;
